@@ -1,0 +1,13 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+body{
+    background-color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    border-radius: 50px;
+}
+
+a {
+    cursor: pointer;
+}

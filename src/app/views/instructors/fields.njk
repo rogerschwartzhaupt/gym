@@ -1,0 +1,93 @@
+
+         <div class="item">
+            <div>Imagem URL</div>
+            <div>
+                <input 
+                    type="url" 
+                    name="imagem" 
+                    placeholder="http://"
+                >
+            </div> 
+        </div>
+
+
+
+        <div class="item">
+            <div>Insctructor</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="" 
+                    placeholder="Nome do instrutor"
+                    value = "{{ instructor.name }}"
+                >
+            </div> 
+        </div>
+
+
+
+        <div class="item">
+            <div>Data de Nascimento</div>
+            <div>
+                <input 
+                    type="date" 
+                    name="birth"
+                    value = "{{ instructor.birth }}"
+                >
+            </div> 
+        </div>
+
+
+        <div class="item">
+            <div>Sexo</div>
+            <div>
+                <span>
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        value="M" 
+                        {% if instructor.gender == 'M' %}
+                            cheked
+                        {% endif %}>Masculino
+                </span>
+                <span>
+                    <input 
+                        type="radio" 
+                        name="gender" 
+                        value="F"
+                        {% if instructor.gender == 'F' %}
+                            cheked
+                        {% endif %}>Feminino
+                </span>
+          
+            </div> 
+        </div>
+
+
+
+         <div class="item">
+            <div>Área de atuação</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="services"
+                    placeholder="Separe os serviços prestados por virgula"
+                    value = "{{ instructor.services }}"
+                >     
+            </div> 
+        </div>
+
+
+         <div class="item">
+            <div>Área de atuação</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="services"
+                    placeholder="Separe os serviços prestados por virgula"
+                    value = "{{ instructor.services }}"
+                >     
+            </div> 
+        </div>
+
+        <button type="submit">Salvar</button>
